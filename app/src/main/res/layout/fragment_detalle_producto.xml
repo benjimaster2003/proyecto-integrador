@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleProductoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_regresar"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_menu_revert" />
+
+            <TextView
+                android:id="@+id/txt_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Detalle del producto"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagen_producto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/txt_nombre_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Nombre:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_descripcion_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Descripción:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_precio_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Precio:"
+            android:textColor="#31AFA0"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btn_disminuir"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_rectangular"
+                android:text="-"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_cantidad"
+                android:layout_width="39dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn_aumentar"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_rectangular"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_comprar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_rectangular"
+            android:text="Añadir"
+            android:layout_margin="16dp" />
+    </LinearLayout>
+
+</ScrollView>

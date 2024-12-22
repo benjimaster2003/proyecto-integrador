@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/aquamarina" /> <!-- Puedes cambiar el color según tus preferencias -->
+    <corners android:radius="0dp" /> <!-- Establece el radio de las esquinas en 0dp para hacerlas rectangulares -->
+</shape>
